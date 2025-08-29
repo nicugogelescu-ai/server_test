@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return "Server HTTPS Python este online pe Render!"
 
-@app.route("/get_file", methods=["GET"])
+@app.route("/ro", methods=["GET"])
 def get_file():
     # trimite un fișier către client
     return send_file("fisier_test.txt", as_attachment=True)
