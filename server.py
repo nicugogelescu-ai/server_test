@@ -7,11 +7,6 @@ app = Flask(__name__)
 def index():
     return "Python HTTPS server is online on Render!"
 
-@app.route("/ro", methods=["GET"])
-def get_file():
-    # send a file to the client
-    return send_file("fisier_test.txt", as_attachment=True)
-
 @app.route("/al", methods=["GET"])
 def get_file():
     # send a file to the client
