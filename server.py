@@ -12,6 +12,11 @@ def get_file():
     # send a file to the client
     return send_file("fisier_test.txt", as_attachment=True)
 
+@app.route("/al", methods=["GET"])
+def get_file():
+    # send a file to the client
+    return send_file("fisier_test.txt", as_attachment=True)
+
 @app.route("/hello", methods=["GET"])
 def hello():
     # JSON response
